@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: white;
+            text-align: center;
+            line-height: 60px;
+        }
+        .father{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .con1{
+            height: 60px;
+            background: red;
+            
+        }
+        .con2{
+            height: 60px;
+            background: blue;
+        }
+        .con3{
+            height: 60px;
+            background: black;
+        }
+        .con4{
+            height: 60px;
+            background: orange;
+        }
+        @media screen and (min-width:1200px){
+            .con1{flex-grow: 1;}
+            .con2{flex-grow: 1;}
+            .con3{flex-grow: 1;}
+            .con4{flex-grow: 1;}
+        }
+        @media screen and (min-width:992px) and (max-width:1200px){
+            .con1{width: 100%;}
+            .con2{flex-grow: 1;}
+            .con3{flex-grow: 1;}
+            .con4{flex-grow: 1;}
+        }
+        @media screen and (min-width:768px) and (max-width:992px){
+            .con1{width: 50%; flex-grow: 1;}
+            .con2{width: 50%; flex-grow: 1;}
+            .con3{width: 50%; flex-grow: 1;}
+            .con4{width: 50%; flex-grow: 1;}
+        }
+        @media screen and  (max-width:768px){
+            .con1{width: 100%; flex-grow: 1;}
+            .con2{width: 100%; flex-grow: 1;}
+            .con3{width: 100%; flex-grow: 1;}
+            .con4{width: 100%; flex-grow: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="con1">1</div>
+        <div class="con2">2</div>
+        <div class="con3">3</div>
+        <div class="con4">4</div>
+    </div>
+</body>
+</html>
